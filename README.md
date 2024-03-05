@@ -1,4 +1,4 @@
 
 install project    npm install,
-install db   mongodb,
+install db   mongodb   and start,
 start project    npm run dev,
