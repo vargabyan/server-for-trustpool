@@ -24,7 +24,7 @@ exports.getPartner = async (req, res) => {
             itemDescriptionText: 'Поставки оборудования для майнинга',
             itemLocation: 'Россия, г. Москва, г. Уфа',
             itemName: 'B.M.TRADE™',
-            itemImg: './uploads/images/photo 16.png',
+            itemImg: './uploads/images/image 16.png',
         })
 
         res.send({partnersData: createResult})

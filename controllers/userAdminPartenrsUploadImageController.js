@@ -44,12 +44,9 @@ exports.updatePartnerImage = [multerConnect, async (request, response, next) => 
 
 exports.getPartnerImage = async (request, response) => {
     const pathImg = request.query.image
-
-    fs.readFile(pathImg, (error, result)=> {
-        if (error) return console.log("error note image")
+    const newPath = path.join(__dirname, '../', pathImg)
 
         response.sendFile(
-            path.join(__dirname, `.${pathImg}`)
+            newPath
         );
-    })
 }
